@@ -1,16 +1,25 @@
 // ProfileForm.js
 import React from 'react';
 import './App.css'; // Import your CSS file
+import logo from './/images/logo.png';
+
 
 function ProfileForm() {
+  let onPage = true;
+
   return (
-    <div className="container">
+
+        <div className="container">
+        <div className="containerheader">
       <h2>UW Bus Buddies</h2>
+  
+      <img src={logo} alt="My Logo" />
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
         </ul>
       </nav>
+      </div>
       <form>
         <label>
           Name:
@@ -57,8 +66,16 @@ function ProfileForm() {
 
         <button type="submit">Submit Your Profile</button>
       </form>
-    </div>
+      </div>
+    
+    
+    
+  
+      
+
   );
+
+
 }
 
 export default ProfileForm;
